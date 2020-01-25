@@ -60,3 +60,5 @@ Note: if you decide to change database name, table name or columns name, remembe
 
 > ng serve --open
 
+
+Now you have the website running. enjoy :)
