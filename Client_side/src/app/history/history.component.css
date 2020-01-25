@@ -1,0 +1,8 @@
+.centering{
+    margin:auto;
+}
+
+.scrollable{
+    overflow-y: auto;
+    max-height: 300px;
+}
