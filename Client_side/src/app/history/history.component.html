@@ -1,0 +1,25 @@
+<div class="centering w-50">
+    <div class="container">
+      <div class="card border-0 shadowp-3">
+        <div class="card-body p-5">
+          <div class="card-text scrollable">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Number</th>
+                  <th scope="col">Valid</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let h of history">
+                      <td>{{ h[2] }}</td>
+                      <td>{{ h[1] }}</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
