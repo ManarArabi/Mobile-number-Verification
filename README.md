@@ -1,5 +1,5 @@
 # Mobile-number-Verification
-This website is maded using flask as backend framework, angular 2+ as frontend framework and [numverify api](https://numverify.com/).
+This website is made using flask as backend framework, angular 2+ as frontend framework and [numverify api](https://numverify.com/).
 
 ## Demo
 
