@@ -1,6 +1,10 @@
 # Mobile-number-Verification
 This website is maded using flask as backend framework, angular 2+ as frontend framework and [numverify api](https://numverify.com/).
 
+## Demo
+
+![demo](https://github.com/ManarArabi/Mobile-number-Verification/blob/master/demo.gif)
+
 ## Server side:
 
 ### MYSQL
@@ -30,6 +34,7 @@ Note: if you decide to change database name, table name or columns name, remembe
 2. Enable virtual environment by executing:
 
 > virtualenv venv
+
 > venv\Scripts\activate
 
 3. Installing (flask, flask-cors, flask-mysql, flask-mysqldb).
@@ -51,6 +56,7 @@ Note: if you decide to change database name, table name or columns name, remembe
 ### Steps:
 
 1. Open cmd in ./Client_side.
+> npm install
 
-> ng serve
+> ng serve --open
 
