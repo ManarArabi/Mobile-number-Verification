@@ -1,0 +1,24 @@
+<div class="centering w-50">
+  <div class="container">
+    <div class="card border-0 shadowp-3">
+      <div class="card-body p-5">
+        <form [formGroup]="validationForm" (ngSubmit)="validate()">
+            <div class="form-group">
+              <div>
+                <label for="mobile_number" >Mobile number</label>
+              </div>
+              <input type="text" class="centering" formControlName="number" id="mobile_number" placeholder="Enter mobile number" required>
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="country_code">Country code</label>
+              </div>
+              <input type="text" class="centering" formControlName="country_code" id="country_code" placeholder="ISO2 or Alpha2 code." required>
+              <small id="number_help" class="form-text text-muted">Please, check <a rel="noopener noreferrer" target="_blank" href="https://www.nationsonline.org/oneworld/country_code_list.htm">this</a> to get your country code</small>
+            </div>
+            <button type="submit" class="centering w-25 btn btn-outline-dark" [disabled]="!validationForm.valid">Verify</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
