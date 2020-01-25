@@ -31,6 +31,8 @@ export class IndexComponent implements OnInit {
     .subscribe((data) =>{
       this.numberDetails = data.body
       this.ns.setNumberDetails(this.numberDetails)
+      if (!this.numberDetails.valid)
+        this.numberDetails.international_format = this.numberDetails.number;
       this.ns.saveNumber(this.numberDetails.international_format, this.numberDetails.valid).subscribe((response)=>{
         this.router.navigateByUrl('/result');
       })
