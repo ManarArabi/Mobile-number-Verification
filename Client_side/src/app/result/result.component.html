@@ -1,6 +1,6 @@
 <div class="centering w-50">
     <div class="container">
-      <div class="card border-0 shadowp-3">
+      <div class="card border-0 shadow p-3">
         <div class="card-body p-5">
             <table class="table table-hover">
                 <tbody>
@@ -8,30 +8,32 @@
                         <td class="font-weight-bold">Valid</td>
                         <td>{{ valid }}</td>
                     </tr>
-                    <tr>
-                        <td class="font-weight-bold">International format</td>
-                        <td>{{ numberDetails.international_format }}</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">Local format</td>
-                        <td>{{ numberDetails.local_format }}</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">Country</td>
-                        <td>{{ numberDetails.country_name }}</td>
-                    </tr>
-                    <tr> 
-                        <td class="font-weight-bold">Location</td>
-                        <td>{{ numberDetails.location }}</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">Carrier</td>
-                        <td>{{ numberDetails.carrier }}</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">Line type</td>
-                        <td>{{ numberDetails.line_type }}</td>
-                    </tr>
+                    <ng-template [ngIf]="isValid()">
+                        <tr>
+                            <td class="font-weight-bold">International format</td>
+                            <td>{{ numberDetails.international_format }}</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Local format</td>
+                            <td>{{ numberDetails.local_format }}</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Country</td>
+                            <td>{{ numberDetails.country_name }}</td>
+                        </tr>
+                        <tr> 
+                            <td class="font-weight-bold">Location</td>
+                            <td>{{ numberDetails.location }}</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Carrier</td>
+                            <td>{{ numberDetails.carrier }}</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Line type</td>
+                            <td>{{ numberDetails.line_type }}</td>
+                        </tr>
+                    </ng-template>
                 </tbody>
               </table>
         </div>

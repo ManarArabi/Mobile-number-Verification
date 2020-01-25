@@ -23,4 +23,8 @@ export class ResultComponent implements OnInit {
     if (!this.numberDetails.location) this.numberDetails.location = "-"
   }
 
+  isValid(){
+    return this.numberDetails.valid
+  }
+
 }
